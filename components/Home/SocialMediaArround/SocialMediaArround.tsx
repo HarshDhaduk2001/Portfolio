@@ -5,7 +5,7 @@ import LinkedinIcon from "../../Icons/LinkedinIcon";
 import InstagramIcon from "../../Icons/InstagramIcon";
 import YoutubeIcon from "../../Icons/YoutubeIcon";
 
-const IconClickableWithAnimation = (props) => {
+const IconClickableWithAnimation = (props: any) => {
   return (
     <motion.div
       whileHover={{

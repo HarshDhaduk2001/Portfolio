@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function YoutubeIcon(props) {
+export default function YoutubeIcon(props: any) {
   return (
     <svg
       className={props.className}
