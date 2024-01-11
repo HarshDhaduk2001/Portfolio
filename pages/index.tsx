@@ -17,7 +17,7 @@ import Head from "next/head";
 export default function Home() {
   const [ShowElement, setShowElement] = useState(false);
   const [ShowThisCantBeReached, setShowThisCantBeReached] = useState(true);
-  const context = useContext(AppContext);
+  const context = useContext<any>(AppContext);
   const aboutRef = useRef<HTMLDivElement>(null);
   const homeRef = useRef<HTMLDivElement>(null);
 
@@ -74,10 +74,7 @@ export default function Home() {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta
-          property="og:url"
-          content={`https://harsh-dhaduk.vercel.app/`}
-        />
+        <meta property="og:url" content={`https://harsh-dhaduk.vercel.app/`} />
         <link rel="canonical" href={`https://harsh-dhaduk.vercel.app/`} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Harsh Dhaduk" />

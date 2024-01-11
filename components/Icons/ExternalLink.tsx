@@ -1,4 +1,5 @@
 import {NextRouter} from 'next/router';
+
 const ExternalLink = (props: { router: NextRouter; url: string }) => {
     return (
       <svg

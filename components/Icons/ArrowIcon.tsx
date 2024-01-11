@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function ArrowIcon(props: any) {
   return (
     <svg
@@ -14,5 +12,5 @@ export default function ArrowIcon(props: any) {
         clipRule="evenodd"
       />
     </svg>
-  )
+  );
 }

@@ -1,17 +1,18 @@
 import "../styles/globals.css";
 import AppContext from "../components/AppContextFolder/AppContext";
 import { useRef, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }: any) {
   const timerCookie = useRef(null);
   const windowSizeTrackerRef = useRef(null);
   const mousePositionRef = useRef(null);
-
   const [sharedState, setSharedState] = useState({
     portfolio: {
       NavBar: {
-        IntervalEvent: defaultIntervalEvent,
-        scrolling: false,
+        IntervalEvent: null,
+        scrolling: null,
+        scrollSizeY: null,
       },
       Scrolling: {
         IntervalEvent: null,
@@ -28,10 +29,10 @@ function MyApp({ Component, pageProps }: any) {
     },
     finishedLoading: false,
   });
-
   return (
     <AppContext.Provider value={{ sharedState, setSharedState }}>
       <Component {...pageProps} />
+      <Analytics />
     </AppContext.Provider>
   );
 }
