@@ -121,7 +121,9 @@ export default function AboutMe(props: any) {
             <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
               <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-5 duration-300 rounded overflow-hidden"></div>
               <Img
-                src={"/img/logo2.jpg"}
+                src={
+                  "https://avatars.githubusercontent.com/u/107307409?s=400&u=741d698f8000a3405eaa6423dcf69fe7345957b9&v=4"
+                }
                 className={"object-contain rounded-lg"}
                 alt="My Image Not Found"
               />
@@ -132,7 +134,9 @@ export default function AboutMe(props: any) {
             <div className="absolute w-48 h-full rounded translate-x-5 translate-y-5 border-2 border-AAsecondary"></div>
             <div className="absolute w-48 h-full rounded overflow-hidden">
               <Img
-                src={"/img/logo2.jpg"}
+                src={
+                  "https://avatars.githubusercontent.com/u/107307409?s=400&u=741d698f8000a3405eaa6423dcf69fe7345957b9&v=4"
+                }
                 className={"object-contain rounded-lg"}
                 alt="My Image Not Found"
               />
