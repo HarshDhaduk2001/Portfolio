@@ -18,11 +18,11 @@ const itemData = [
     cols: 1,
   },
   {
-    img: "8.JPG",
+    img: "8.jpg",
     title: "hd",
   },
   {
-    img: "4.jpg",
+    img: "4.JPG",
     title: "hd",
   },
 ];
