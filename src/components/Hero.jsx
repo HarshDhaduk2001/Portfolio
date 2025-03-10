@@ -11,13 +11,13 @@ const container = (delay) => ({
 const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
-      <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2 lg:p-8 lg:pl-24">
+      <div className="flex flex-wrap items-center justify-center">
+        <div className="w-full max-w-5xl lg:p-8 lg:pl-24">
           <motion.div
             whileInView={{ x: 0, opacity: 1 }}
             initial={{ x: -100, opacity: 0 }}
             transition={{ duration: 1 }}
-            className="flex flex-col items-center lg:items-start"
+            className="flex flex-col items-center"
           >
             <motion.h1
               variants={container(0)}
@@ -39,7 +39,7 @@ const Hero = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              className="my-2 py-6 font-light tracking-tighter lg:text-lg"
             >
               {HERO_CONTENT}
             </motion.p>
@@ -57,7 +57,7 @@ const Hero = () => {
             </motion.p>
           </motion.div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-8">
+        {/* <div className="w-full lg:w-1/2 lg:p-8">
           <motion.div
             whileInView={{ x: 0, opacity: 1 }}
             initial={{ x: 100, opacity: 0 }}
@@ -72,7 +72,7 @@ const Hero = () => {
               transition={{ duration: 1, delay: 1.2 }}
             />
           </motion.div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

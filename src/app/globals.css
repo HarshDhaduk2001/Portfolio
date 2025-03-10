@@ -7,3 +7,19 @@
 :root {
   font-family: "Inter", sans-serif;
 }
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* For IE & Edge */
+body {
+  -ms-overflow-style: none;
+}
